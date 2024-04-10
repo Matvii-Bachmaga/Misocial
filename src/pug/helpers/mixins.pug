@@ -1,0 +1,32 @@
+mixin menu-line
+    .menu-line.flex
+        a.menu-line__logo.flex(href="index.html")
+            img.menu-line__logo-img(src="img/planet.png", alt="Logo of Misocial")
+            b MISOCIAL
+        .menu-line__burger
+            .menu-line__burger-line
+        ul.menu-line__menu.flex
+            li
+                a.menu-line__link(href="#") Home                                                  
+            li
+                a.menu-line__link(href="#") Why MISOCIAL 
+            li
+                a.menu-line__link(href="#") Features
+            li
+                a.menu-line__link(href="#") Articles 
+            li
+                a.menu-line__link(href="#") Pricing
+            li
+                a.menu-line__link.menu-line__button(href="#") get started
+mixin card(sell, svg)
+    figure
+        figcaption.cards
+            <svg class="broshure__card-img">
+                <use xlink:href=#{svg}></use>
+            </svg>
+            h3.h3 personal
+            p.p
+                b= sell
+                i.broshure__card-sell-date.broshure_card-sell-date-first /month
+            p.main-text Lorem ipsum dolor sit amet.sed do eiusmod tempor incididunt ut.Labore et dolore magna aliqua.quis nostrud exercitation ullamco laboris. Ea commodo consequat
+            a(href="#").menu-line__link.menu-line__button select plan

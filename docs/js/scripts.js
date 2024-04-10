@@ -1,0 +1,1 @@
+function setBurger(e){let r=document.querySelector(e),u=r.querySelector(".menu-line__burger"),n=r.querySelector(".menu-line__menu");u.onclick=function(){n.classList.toggle("menu-line__menu_active")}}setBurger("header"),setBurger("footer");

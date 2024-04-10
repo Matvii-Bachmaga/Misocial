@@ -1,0 +1,194 @@
+footer
+    .menu-line
+        padding-bottom: 30px
+        &__logo
+            color: #37374a
+        &__link
+            color: $copy
+        &__button
+            color: $textLight
+            border-color: $primary
+            background: $primary
+    .footer-line
+        display: block
+        margin-bottom: 30px
+        +media(768)
+            display: flex
+            justify-content: space-between
+    hr
+        margin-bottom: 30px
+        color: $hr
+    .copyright
+        margin-bottom: 30px
+        color: grey
+        font-size: 12rem
+        +media(768)
+            margin-bottom: 0px
+    .menu-line__burger-line
+        &,
+        &:before,
+        &:after
+            background-color: black
+    .menu-line__menu a:hover
+        color: $primary
+        transition: .3s
+        text-decoration: none
+    .menu-line__button:hover
+        background-color: $textLight
+    .footer-line__social
+        list-style: none
+        column-gap: 15px
+        &-fb
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: 1%
+                width: 16px
+                height: 16px
+                background: url(../img/fb.svg)
+                transition: all 1s ease
+                z-index: -1
+                +media(320)
+                    top: -30%
+                +media(1024)
+                    top: -7%
+            &::after
+                content: ''
+                position: absolute
+                top: -7%
+                left: 1%
+                width: 16px
+                height: 16px
+                background: url(../img/fb_two.svg)
+                transform: scale(0)
+                transition: all 1s ease
+                z-index: -2
+            &:hover::before
+                transform: scale(0)
+                z-index: -3
+            &:hover::after
+                transform: scale(1)
+            &:hover .social-icons
+                stroke-dashoffset: 220px
+                opacity: 0.5
+                stroke: $primary
+        &-tw
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: 1%
+                width: 16px
+                height: 16px
+                background: url(../img/tw.svg)
+                transition: all 1s ease
+                z-index: -1
+                +media(320)
+                    top: -30%
+                +media(1024)
+                    top: -7%
+            &::after
+                content: ''
+                position: absolute
+                top: -7%
+                left: 1%
+                width: 16px
+                height: 16px
+                background: url(../img/tw_two.svg)
+                transform: scale(0)
+                transition: all 1s ease
+                z-index: -2
+            &:hover::before
+                transform: scale(0)
+                z-index: -3
+            &:hover::after
+                transform: scale(1)
+            &:hover .social-icons
+                stroke-dashoffset: 220px
+                opacity: 0.5
+                stroke: $primary
+        &-google
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: -2%
+                width: 16px
+                height: 16px
+                background: url(../img/google-plus.svg)
+                transition: all 1s ease
+                z-index: -1
+                +media(320)
+                    top: -30%
+                +media(1024)
+                    top: -7%
+            &::after
+                content: ''
+                position: absolute
+                top: -7%
+                left: -2%
+                width: 16px
+                height: 16px
+                background: url(../img/google-plus_two.svg)
+                transform: scale(0)
+                transition: all 1s ease
+                z-index: -2
+            &:hover::before
+                transform: scale(0)
+                z-index: -3
+            &:hover::after
+                transform: scale(1)
+            &:hover .social-icons
+                stroke-dashoffset: 220px
+                opacity: 0.5
+                stroke: $primary
+        &-inst
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: 1%
+                width: 16px
+                height: 16px
+                background: url(../img/inst.svg)
+                transition: all 1s ease
+                z-index: -2
+                +media(320)
+                    top: -30%
+                +media(1024)
+                    top: -7%
+            &::after
+                content: ''
+                position: absolute
+                top: -7%
+                left: 1%
+                width: 16px
+                height: 16px
+                background: url(../img/inst_two.svg)
+                transform: scale(0)
+                transition: all 1s ease
+                z-index: -1
+                &:hover::before
+                    transform: scale(0)
+                    z-index: -3
+                &:hover::after
+                    transform: scale(1)
+                &:hover .social-icons
+                    stroke-dashoffset: 220px
+                    opacity: 0.5
+                    stroke: $primary
+    .social-icons
+        width: 16px
+        height: 16px
+        transition: all 1s ease
+        border-radius: 25%
+        opacity: 0.502
+        fill: none
+        stroke: $copy
+        stroke-width: 1px
+        stroke-dasharray: 110px
+        stroke-linecap: round
+        +media(768)
+            height: 16px
+            width: 16px

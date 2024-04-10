@@ -1,0 +1,151 @@
+.header
+    margin-bottom: 100px
+    background: $gradientBg, $gradientStart url(../img/bg_header.jpg) no-repeat
+    background-size: cover
+    background-position: center
+    +media(320)
+        padding: 50rem 0
+    +media(768)
+        padding: 50rem 20rem
+    &__content
+        padding: 180px 0
+.menu-line
+    &__logo
+        width: 240px
+        font-size: 30px
+        letter-spacing: 6rem
+        color: $textLight
+        +media(1440)
+            width: 260rem
+    &__burger
+        width: 45px
+        height: 25px
+        +media(768)
+            display: none
+    &__burger-line
+        position: relative
+        &,
+        &:before,
+        &:after
+            width: 100%
+            height: 5px
+            background-color: $textLight
+            border-radius: 3px
+        &:before,
+        &:after
+            position: absolute
+            content: ''
+            left: 0
+        &:before
+            top: 10px
+        &:after
+            top: 20px
+    &__menu
+        display: none
+        &_active
+            display: block
+            padding: 20px 0
+        +media(320)
+            border-bottom: 3px solid $hr
+        +media(768)
+            display: flex
+            width: 65%
+            border-bottom: none
+        +media(1440)
+            width: 55%
+    &__link
+        display: inline-block
+        line-height: 19rem
+        color: $textLight
+        font-weight: 500
+        &:hover
+            text-decoration: underline
+            text-underline-offset: 15px
+            text-underline-width: 2px
+        +media(320)
+            margin-bottom: 20px
+            font-size: 20rem
+        +media(768)
+            margin-bottom: 0
+            font-size: 16rem
+    &__button
+        padding: 9px 35px
+        font-size: 12rem
+        letter-spacing: 1rem
+        line-height: 32rem
+        text-transform: uppercase
+        font-weight: 700
+        border: 1px solid $textLight
+        border-radius: $buttonRadius
+        &:hover
+            text-decoration: none
+            background-color: $primary
+            border-color: $primary
+            transition: .5s
+        +media(320)
+            font-size: 12rem
+        +media(768)
+            font-size: 12rem
+.section-content
+    width: 80%
+    margin: 0 auto
+    padding: 100px 0
+    text-align: center
+    color: $textLight
+    +media(425)
+        width: 60%
+    +media(1440)
+        width: 45%
+    &__promo
+        position: relative
+        display: inline-block
+        margin-bottom: 10px
+        font-size: 14rem
+        font-weight: 700
+        padding: 0 15px
+        line-height: 32rem
+        text-transform: uppercase
+        &::before,
+        &::after
+            content: ""
+            position: absolute
+            top: 50%
+            width: 24px
+            height: 1px
+            background: $textLight
+        &::before
+            left: -35rem
+        &::after
+            right: -35rem
+    &__title
+        font-size: 86rem
+        letter-spacing: 3rem
+        font-weight: 500
+        padding-bottom: 20px
+    &__desc
+        margin: 0 auto
+        line-height: 28rem
+        +media(768)
+            max-width: 80%
+        +media(1024)
+            max-width: 70%
+        +media(1440)
+            max-width: 61%
+.arrow
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 65px
+    height: 65px
+    background: $textLight
+    border-radius: 32px
+    margin: 0 auto
+    text-align: center
+    &:hover
+        transform: scale(1.1)
+        transition: 0.4s
+        filter: drop-shadow(0 0 10.5px rgba(204, 204, 223, .5))
+    &__icon
+        width: 14px
+        height: 16px
+        color: $textDark

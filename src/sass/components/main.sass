@@ -1,0 +1,165 @@
+main
+    .main-section-content
+        margin-bottom: 30px
+        text-align: center
+        .main-section-content__promo,
+        .main-section-content__desc
+            color: $textDark
+        .main-section-content__promo
+            position: relative
+            margin-bottom: 20px
+            display: inline-block
+            &::before,
+            &::after
+                content: ""
+                position: absolute
+                top: 50%
+                width: 24px
+                height: 1px
+                background: $primary
+            &::before
+                left: -40rem
+            &::after
+                right: -40rem
+        .main-section-content__title
+            margin-bottom: 20px
+            font-size: 60rem
+            color: $title
+        .main-section-content__desc
+            margin: 0 auto
+            margin-bottom: 100px
+            font-size: 16rem
+            line-height: 28rem
+            +media(375)
+                max-width: 90%
+            +media(768)
+                max-width: 40%
+            +media(1440)
+                max-width: 30%
+    .useful-thinks
+        display: block
+        margin-bottom: 100px
+        text-align: center
+        +media(1440)
+            display: inline-flex
+            justify-content: space-between
+        .cards
+            border-radius: 30px
+            border: 1px solid $buttonBorder
+            background-color: $textLight
+            &:hover
+                filter: drop-shadow(0 0 46px rgba(204, 204, 223, .71))
+                border: 1px solid transparent
+                transition: .5s
+            +media(1440)
+                margin: 0 20px 0 0
+                padding: 60px 40px 65px 70px 30px
+            +media(1024)
+                padding: 60px 40px 65px 70px 30px
+            +media(320)
+                margin-bottom: 30px
+        .broshure__card-img
+            display: inline-flex
+            padding-top: 50px
+            margin-bottom: 30px
+            height: 110px
+        .p
+            margin-bottom: 20px
+            font-size: 14px
+            letter-spacing: 1px
+            text-transform: uppercase
+            color: $textDark
+            font-weight: 700
+        b
+            position: relative
+            display: inline-block
+            font-size: 60px
+            letter-spacing: -2px
+            line-height: 72px
+            color: $title
+            text-align: center
+            &::before
+                content: "$"
+                position: absolute
+                font-size: 17px
+                top: -20%
+                left: -30%
+        .broshure_card-sell-date-first
+            color: $title
+            font-size: 16px
+            text-transform: lowercase
+            letter-spacing: 0
+        h3
+            margin-bottom: 30px
+            font-size: 14px
+            letter-spacing: 1px
+            line-height: 32px
+            text-transform: uppercase
+            color: $textDark
+            font-weight: 700
+        .main-text
+            margin: 0 auto
+            margin-bottom: 30px
+            font-size: 16rem
+            line-height: 28rem
+            color: $textDark
+            font: 400
+            +media(768)
+                max-width: 80%
+            +media(1024)
+                max-width: 70%
+            +media(1440)
+                max-width: 61%
+        .menu-line__button
+            margin-bottom: 60px
+            max-width: 190px
+            border-radius: $buttonRadius
+            color: $textDark
+            filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
+            background-color: $textLight
+            border: 1px solid $buttonBorder
+            font-size: 12rem
+            font-weight: 700
+            &:hover
+                background-color: $primary
+                color: $textLight
+                transition: .5s
+    .buttons
+        .menu-line__button
+            margin-bottom: 20px
+            color: $textDark
+            filter: drop-shadow(0 0 10.5px rgba(204,204,223,0.5))
+            background-color: $textLight
+            border: 1px solid $buttonBorder
+            +media(768)
+                margin: 0 18px
+
+            &:hover
+                background-color: $primary
+                border-color: $primary
+                color: $textLight
+                transition: .5s
+.main-picture
+    padding: 50px 0
+    background: url(../img/map.png) no-repeat
+    background-size: cover
+    background-position: center
+    +media(320)
+        margin-bottom: 30px
+    .section-content__title
+        margin-bottom: 15px
+        font-size: 52rem
+    .main-section-content__promo
+        margin-bottom: 15px
+        font-size: 14px
+    .buttons
+        display: block
+        max-width: 500px
+        +media(768)
+            margin: 0 auto
+            margin-bottom: 0
+            display: flex
+            justify-content: space-between
+            padding: 0 5px
+        .menu-line__button
+            width: 190px
