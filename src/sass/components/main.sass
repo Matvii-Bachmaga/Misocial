@@ -37,12 +37,12 @@ main
             +media(1440)
                 max-width: 30%
     .useful-thinks
-        display: block
         margin-bottom: 100px
         text-align: center
-        +media(1440)
-            display: inline-flex
-            justify-content: space-between
+        +media(320)
+            display: block
+        +media(768)
+            display: flex
         .cards
             border-radius: 30px
             border: 1px solid $buttonBorder
@@ -51,33 +51,27 @@ main
                 filter: drop-shadow(0 0 46px rgba(204, 204, 223, .71))
                 border: 1px solid transparent
                 transition: .5s
-            +media(1440)
-                margin: 0 20px 0 0
-                padding: 60px 40px 65px 70px 30px
-            +media(1024)
-                padding: 60px 40px 65px 70px 30px
             +media(320)
                 margin-bottom: 30px
+            +media(768)
+                margin: 0 20px 0 0
         .broshure__card-img
             display: inline-flex
             padding-top: 50px
             margin-bottom: 30px
             height: 110px
         .p
-            margin-bottom: 20px
-            font-size: 14px
-            letter-spacing: 1px
-            text-transform: uppercase
-            color: $textDark
-            font-weight: 700
-        b
-            position: relative
             display: inline-block
             font-size: 60px
             letter-spacing: -2px
             line-height: 72px
-            color: $title
             text-align: center
+            color: $textDark
+            font-weight: 700
+        b
+            position: relative
+            font-weight: 500
+            color: $title
             &::before
                 content: "$"
                 position: absolute
@@ -85,10 +79,12 @@ main
                 top: -20%
                 left: -30%
         .broshure_card-sell-date-first
+            letter-spacing: 1px
+            font-size: 20px
+            font-weight: 500
+            font-style: normal
             color: $title
-            font-size: 16px
-            text-transform: lowercase
-            letter-spacing: 0
+            font-family: "Maven Pro"
         h3
             margin-bottom: 30px
             font-size: 14px

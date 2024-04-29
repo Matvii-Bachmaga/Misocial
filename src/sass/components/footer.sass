@@ -53,22 +53,9 @@ footer
                     top: -30%
                 +media(1024)
                     top: -7%
-            &::after
-                content: ''
-                position: absolute
-                top: -7%
-                left: 1%
-                width: 16px
-                height: 16px
-                background: url(../img/fb_two.svg)
-                transform: scale(0)
-                transition: all 1s ease
-                z-index: -2
             &:hover::before
                 transform: scale(0)
                 z-index: -3
-            &:hover::after
-                transform: scale(1)
             &:hover .social-icons
                 stroke-dashoffset: 220px
                 opacity: 0.5
@@ -88,22 +75,9 @@ footer
                     top: -30%
                 +media(1024)
                     top: -7%
-            &::after
-                content: ''
-                position: absolute
-                top: -7%
-                left: 1%
-                width: 16px
-                height: 16px
-                background: url(../img/tw_two.svg)
-                transform: scale(0)
-                transition: all 1s ease
-                z-index: -2
             &:hover::before
                 transform: scale(0)
                 z-index: -3
-            &:hover::after
-                transform: scale(1)
             &:hover .social-icons
                 stroke-dashoffset: 220px
                 opacity: 0.5
@@ -123,22 +97,9 @@ footer
                     top: -30%
                 +media(1024)
                     top: -7%
-            &::after
-                content: ''
-                position: absolute
-                top: -7%
-                left: -2%
-                width: 16px
-                height: 16px
-                background: url(../img/google-plus_two.svg)
-                transform: scale(0)
-                transition: all 1s ease
-                z-index: -2
             &:hover::before
                 transform: scale(0)
                 z-index: -3
-            &:hover::after
-                transform: scale(1)
             &:hover .social-icons
                 stroke-dashoffset: 220px
                 opacity: 0.5
@@ -158,26 +119,13 @@ footer
                     top: -30%
                 +media(1024)
                     top: -7%
-            &::after
-                content: ''
-                position: absolute
-                top: -7%
-                left: 1%
-                width: 16px
-                height: 16px
-                background: url(../img/inst_two.svg)
+            &:hover::before
                 transform: scale(0)
-                transition: all 1s ease
-                z-index: -1
-                &:hover::before
-                    transform: scale(0)
-                    z-index: -3
-                &:hover::after
-                    transform: scale(1)
-                &:hover .social-icons
-                    stroke-dashoffset: 220px
-                    opacity: 0.5
-                    stroke: $primary
+                z-index: -3
+            &:hover .social-icons
+                stroke-dashoffset: 220px
+                opacity: 0.5
+                stroke: $primary
     .social-icons
         width: 16px
         height: 16px
