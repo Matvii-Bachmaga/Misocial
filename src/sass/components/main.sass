@@ -41,7 +41,7 @@ main
         text-align: center
         +media(320)
             display: block
-        +media(768)
+        +media(1024)
             display: flex
         .cards
             border-radius: 30px
@@ -53,8 +53,9 @@ main
                 transition: .5s
             +media(320)
                 margin-bottom: 30px
-            +media(768)
-                margin: 0 20px 0 0
+            +media(1024)
+                width: 95%
+                margin: auto
         .broshure__card-img
             display: inline-flex
             padding-top: 50px
@@ -129,7 +130,6 @@ main
             border: 1px solid $buttonBorder
             +media(768)
                 margin: 0 18px
-
             &:hover
                 background-color: $primary
                 border-color: $primary

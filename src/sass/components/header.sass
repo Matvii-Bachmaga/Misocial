@@ -11,7 +11,7 @@
         padding: 180px 0
 .menu-line
     &__logo
-        width: 245px
+        width: 243px
         font-size: 30px
         letter-spacing: 6rem
         color: $textLight
@@ -42,11 +42,13 @@
             top: 20px
     &__menu
         display: none
+        top: 13%
+        width: 305px
         &_active
             display: block
             padding: 20px 0
         +media(320)
-            border-bottom: 3px solid $hr
+            border-bottom: 3px solid $textLight
         +media(768)
             display: flex
             width: 65%
@@ -94,8 +96,6 @@
     color: $textLight
     +media(425)
         width: 60%
-    +media(1440)
-        width: 45%
     &__promo
         position: relative
         display: inline-block
